@@ -5,7 +5,7 @@ public class Cross {
 
         for (int i = 0; i < sideLength; i++) { // rows
             for (int j = 0; j < sideLength; j++) { //col
-                if (i == 1 || j == 2 && i != 4) {
+                if (i == sideLength/2 || j == sideLength/2) {
                     System.out.print('8');
                 } else
                     System.out.print(' ');
@@ -16,7 +16,7 @@ public class Cross {
 
     public static void main(String[] args) {
         Cross cross = new Cross();
-        cross.printCross(5);
+        cross.printCross(3);
     }
 
 }
